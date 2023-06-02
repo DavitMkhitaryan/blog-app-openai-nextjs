@@ -22,6 +22,16 @@ export default withApiAuthRequired(async function handler(req, res) {
 
   const { topic, keywords } = req.body;
 
+  if (!topic || !keywords) {
+    res.status(422);
+    return;
+  }
+
+  if (topic.length > 80 || keywords.length > 80) {
+    res.status(422);
+    return;
+  }
+
   /* const response = await openai.createCompletion({
     model: "text-davinci-003",
     temperature: 0,
