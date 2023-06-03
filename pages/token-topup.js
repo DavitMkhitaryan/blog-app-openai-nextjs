@@ -18,7 +18,7 @@ export default function TokenTopUp() {
   return (
     <div className="w-full flex flex-col items-center justify-center px-24 gap-4">
       <h1 className="text-6xl text-green-500">Token Top Up</h1>
-      <p>Click "Add Tokens" button to purchase more tokens</p>
+      <p>Click Add Tokens button to purchase more tokens</p>
       <button className="btn w-[50%]" onClick={handleClick}>
         Add Tokens
       </button>
