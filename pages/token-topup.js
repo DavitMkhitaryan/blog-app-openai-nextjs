@@ -23,7 +23,7 @@ export default function TokenTopUp() {
         Add Tokens
       </button>
       <div className="w-[50%] object-contain border">
-        <Image src={aiImage} className="object-contain"/>
+        <Image src={aiImage} className="object-contain" alt="AI Banner"/>
       </div>
     </div>
   );
